@@ -15,7 +15,7 @@ def replace_problematic_chars(text):
     for original, replacement in replacements.items():
         text = text.replace(original, replacement)
     
-    print(text)  # Debug: Print the modified text to check
+    print(text)  # In terminal copy
     return text
 
 def pattern_search(text, pattern, replacement, case_sensitive=True):
