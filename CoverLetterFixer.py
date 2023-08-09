@@ -15,7 +15,7 @@ def replace_problematic_chars(text):
     for original, replacement in replacements.items():
         text = text.replace(original, replacement)
     
-    print(text)  # In terminal copy
+    print(text)  # In terminal copy, printed version of letter in terminal
     return text
 
 def pattern_search(text, pattern, replacement, case_sensitive=True):
@@ -68,12 +68,15 @@ new_date = input("Enter the new date: ")
 print("Which letter would you like to modify?")
 print("1: A.txt")
 print("2: B.txt")
-choice = input("Enter 1 or 2: ")
+print("3: C.txt")
+choice = input("Enter 1, 2 or 3: ")
 
 if choice == "1":
     file_name = "A.txt"
 elif choice == "2":
     file_name = "B.txt"
+elif choice == "3":
+    file_name = "C.txt"
 else:
     print("Invalid choice. Exiting program.")
     exit()
